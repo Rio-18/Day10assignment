@@ -19,6 +19,8 @@ dict['sum3']=$sum3
 sum4=$(echo $a $b $c | awk '{print $1*$2+$3}')
 dict['sum4']=$sum4
 
-echo ${dict[@]}
+echo "dictionary value are : ${dict[@]}"
 
+arr=(${dict[@]})
+echo "value of array are : ${arr[@]}"
 
