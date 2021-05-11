@@ -8,3 +8,6 @@ read -p "enter third value : " c
 
 sum=$(echo $a $b $c | awk '{print $1+$2*$3}')
 echo $sum
+
+sum2=$(echo $a $b $c | awk '{print $1+$3/2}')
+echo $sum2
